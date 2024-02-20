@@ -1,16 +1,17 @@
-# Import db inside functions or methods where it's needed
-from . import db
-
+#!/usr/bin/python3
+# models/orders.py
 class Order(db.Model):
-    order_id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
-    order_date = db.Column(db.DateTime, nullable=False)
-    total_amount = db.Column(db.Float, nullable=False)
-    status = db.Column(db.String(20), nullable=False)
+    def __init__(self, db):
+        self.db = db
+        order_id = db.Column(db.Integer, primary_key=True)
+        user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
+        order_date = db.Column(db.DateTime, nullable=False)
+        total_amount = db.Column(db.Float, nullable=False)
+        status = db.Column(db.String(20), nullable=False)
 
-    # Relationships
-    user = db.relationship("User", backref="orders")
-    products = db.relationship("Product", secondary="order_products")
+        # Relationships
+        user = db.relationship("User", backref="orders")
+        products = db.relationship("Product", secondary="order_products")
 
     def serialize(self):
         """Serializes Order object to a dictionary"""

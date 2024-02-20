@@ -1,5 +1,6 @@
-# Import db inside functions or methods where it's needed
-from . import db
+#!/usr/bin/python3
+# models/user.py
+#from . import db
 from hashlib import sha256
 
 class User(db.Model):

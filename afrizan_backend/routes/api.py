@@ -1,5 +1,6 @@
+#!/usr/bin/python3
 from flask_restful import Resource
-from models import db, User, Product, Order, Review, Category, Artisan
+#from import User, Product, Order, Review, Category, Artisan
 
 class UserResource(Resource):
     def get(self):
@@ -28,9 +29,7 @@ class ReviewResource(Resource):
 class CategoryResource(Resource):
     def get(self):
         categories = Category.query.all()
-        return [category.serialize() for category in categories], 200
 
 class ArtisanResource(Resource):
     def get(self):
         artisans = Artisan.query.all()
-        return [artisan.serialize() for artisan in artisans], 200

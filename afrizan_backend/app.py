@@ -1,7 +1,8 @@
+#!/usr/bin/python3
 from flask import Flask
 from flask_restful import Api
 from config import config
-from models import db
+#from models import db
 from routes.api import UserResource, ProductResource, OrderResource, CategoryResource, ArtisanResource, ReviewResource
 
 app = Flask(__name__)
@@ -9,7 +10,7 @@ app.config.from_object(config)
 api = Api(app)
 
 # Initialize SQLAlchemy
-db.init_app(app)
+#db.init_app
 
 # API endpoints
 api.add_resource(UserResource, '/api/users')
