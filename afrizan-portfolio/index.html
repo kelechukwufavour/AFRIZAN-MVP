@@ -1,47 +1,236 @@
-<!-- Content for home section -->
-<section id="home">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>AFRIZAN</title>
+    <style>
+        /* Add your CSS styles here */
+        /* Hamburger menu CSS */
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+        }
+        .nav-links.open {
+            display: block;
+        }
+        .nav-links li {
+            margin-right: 20px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        /* Dropdown menu CSS */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hamburger menu -->
+    <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Menu</a>
+                <div class="dropdown-content">
+                    <a href="#profile">Profile</a>
+                    <a href="#help">Help</a>
+                    <a href="#signup">Sign Up</a>
+                    <a href="#products">Products</a>
+                    <a href="#review">Reviews</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li> 
+            <li><a href="#portfolio">Product Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content for home section -->
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to AFRIZAN</h2>
+            <p>Discover and Shop Timeless African Handmade Pieces.</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Content for about section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
+            <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
+        </div>
+    </section>
+
+    <!-- Content for portfolio  section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Product Categories</h2>
+	    <p>View our collection of meticulously handcrafted Afrocentric pieces.</p>
+            <ul>
+                <li>Bags</li>
+                <li>Clothes</li>
+                <li>Earrings</li>
+                <li>Bracelets</li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Content for contact section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us to learn more about our products and services.</p>
+            <!-- Add a contact form or contact information -->
+        </div>
+    </section>
+
+    <!-- Content for login/signup section -->
+    <section id="login">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="loginForm" action="login.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Content for user/artisan profile section -->
+<section id="profile">
     <div class="container">
-        <h2>Welcome to AFRIZAN </h2>
-        <p>Discover and Shop Timeless African Handmade Pieces.</p>
-        <button onclick="scrollToSection('about')">Learn More</button>
+        <h2>User/Artisan Profile</h2>
+        
+        <h3>User Profile</h3>
+        <form id="userProfileForm" action="update_profile.php" method="post">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- Add more user profile details here -->
+            <button type="submit">Update Profile</button>
+        </form>
+
+        <h3>Artisan Profile</h3>
+        <form id="artisanProfileForm" action="update_profile.php" method="post">
+            <label for="artisanName">Artisan Name:</label>
+            <input type="text" id="artisanName" name="artisanName" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="contactInfo">Contact Info:</label>
+            <input type="text" id="contactInfo" name="contactInfo" required>
+            <label for="artisanId">Artisan ID:</label>
+            <input type="text" id="artisanId" name="artisanId" required>
+            <!-- Add more artisan profile details here -->
+            <button type="submit">Update Profile</button>
+        </form>
     </div>
 </section>
 
-<!-- Content for about section -->
-<section id="about">
-    <div class="container">
-        <h2>About Us</h2>
-        <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.
-	Who We Help/Users
+    <!-- Content for help section -->
+    <section id="help">
+        <div class="container">
+            <h2>Help</h2>
+            <!-- Add FAQ content here -->
+        </div>
+    </section>
 
-Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
-        <!-- Add more content about your brand -->
+    <!-- Content for sign up section -->
+<section id="signup">
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="signup.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="phone">Phone (Country Code):</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
     </div>
 </section>
 
-<!-- Content for services section -->
-<section id="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <p>Explore our range of Products that celebrate African heritage and craftsmanship.</p>
-        <!-- Add more content about your services -->
-    </div>
-</section>
+    <!-- Content for products section -->
+    <section id="products">
+        <div class="container">
+            <h2>Products</h2>
+            <div class="product">
+                <h3>Product Name</h3>
+                <p>Product Description</p>
+                <p>Collection: Collection Name</p>
+                <p>Price: $XX.XX</p>
+                <p>Artisan ID: 123</p>
+                <p>Stock Quantity: XX</p>
+                <p>Category ID: 456</p>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
 
-<!-- Content for portfolio section -->
-<section id="portfolio">
-    <div class="container">
-        <h2>Our Portfolio</h2>
-        <p>View our collection of meticulously handcrafted Afrocentric pieces.</p>
-        <!-- Add more content about your portfolio -->
-    </div>
-</section>
+    <!-- Content for reviews section -->
+    <section id="review">
+        <div class="container">
+            <h2>Reviews</h2>
+            <!-- Add review content here -->
+        </div>
+    </section>
 
-<!-- Content for contact section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us to learn more about our products and services.</p>
-        <!-- Add a contact form or contact information -->
-    </div>
-</section>
+    <!-- Content for FAQ section -->
+    <section id="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <!-- Add FAQ content here -->
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const
