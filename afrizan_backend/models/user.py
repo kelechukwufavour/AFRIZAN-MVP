@@ -1,3 +1,4 @@
+# Import db inside functions or methods where it's needed
 from . import db
 from hashlib import sha256
 
