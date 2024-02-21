@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../afrizan-portfolio/styles.css"> 
+    <link rel="stylesheet" href="../afrizan-portfolio/styles.css">
     <title>AFRIZAN</title>
-    <style>
-     
-    <!-- Hamburger menu -->
-    <div class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Navigation bar -->
+</head>
+<body>
+    <header>
+        <!-- Add your logo image here -->
+        <img src="path_to_your_logo/logo.png" alt="AFRIZAN Logo" class="logo">
+        <h1>Welcome to AFRIZAN</h1>
+    </header>
+    
     <nav>
         <ul class="nav-links">
             <li class="dropdown">
@@ -108,92 +106,3 @@
             <!-- Add more user profile details here -->
             <button type="submit">Update Profile</button>
         </form>
-
-        <h3>Artisan Profile</h3>
-        <form id="artisanProfileForm" action="update_profile.php" method="post">
-            <label for="artisanName">Artisan Name:</label>
-            <input type="text" id="artisanName" name="artisanName" required>
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-            <label for="contactInfo">Contact Info:</label>
-            <input type="text" id="contactInfo" name="contactInfo" required>
-            <label for="artisanId">Artisan ID:</label>
-            <input type="text" id="artisanId" name="artisanId" required>
-            <!-- Add more artisan profile details here -->
-            <button type="submit">Update Profile</button>
-        </form>
-    </div>
-</section>
-
-    <!-- Content for help section -->
-    <section id="help">
-        <div class="container">
-            <h2>Help</h2>
-            <!-- Add FAQ content here -->
-        </div>
-    </section>
-
-    <!-- Content for sign up section -->
-<section id="signup">
-    <div class="container">
-        <h2>Sign Up</h2>
-        <form id="signupForm" action="signup.php" method="post">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            <label for="phone">Phone (Country Code):</label>
-            <input type="text" id="phone" name="phone" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
-</section>
-
-    <!-- Content for products section -->
-    <section id="products">
-        <div class="container">
-            <h2>Products</h2>
-            <div class="product">
-                <h3>Product Name</h3>
-                <p>Product Description</p>
-                <p>Collection: Collection Name</p>
-                <p>Price: $XX.XX</p>
-                <p>Artisan ID: 123</p>
-                <p>Stock Quantity: XX</p>
-                <p>Category ID: 456</p>
-            </div>
-            <!-- Add more products as needed -->
-        </div>
-    </section>
-
-    <!-- Content for reviews section -->
-    <section id="review">
-        <div class="container">
-            <h2>Reviews</h2>
-            <!-- Add review content here -->
-        </div>
-    </section>
-
-    <!-- Content for FAQ section -->
-    <section id="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <!-- Add FAQ content here -->
-        </div>
-    </section>
-
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const
