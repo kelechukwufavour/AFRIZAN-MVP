@@ -152,3 +152,44 @@ button:hover {
 .category h3 {
     margin: 0;
 }
+/* User/Artisan Profile CSS */
+#profile {
+    background-image: url('path_to_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust text color for better readability */
+}
+
+#profile .container {
+    padding: 20px;
+}
+
+#profile h2 {
+    margin-bottom: 20px;
+}
+
+#profile form {
+    margin-top: 20px;
+}
+
+#profile label {
+    color: white; /* Adjust label color for better readability */
+}
+
+#profile input[type="text"],
+#profile input[type="email"],
+#profile input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust input background color for better readability */
+    color: #333; /* Adjust input text color for better readability */
+}
+
+#profile button {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#profile button:hover {
+    background-color: #666;
+    color: #fff;
+}
