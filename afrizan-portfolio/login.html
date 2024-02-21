@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../afrizan-portfolio/styles.css">
-     <style>
+    <style>
         body {
+            /* Replace 'path_to_background_image.jpg' with the actual path to your background image */
             background-image: url('path_to_background_image.jpg');
             background-size: cover;
             background-position: center;
@@ -15,54 +16,14 @@
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
         <form id="loginForm">
+            <h2>Login</h2>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Login</button>
         </form>
-    </div>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Get the form data
-            const formData = new FormData(event.target);
-
-            // Convert form data to JSON object
-            const jsonData = {};
-            formData.forEach((value, key) => {
-                jsonData[key] = value;
-            });
-
-            // Send a POST request to the backend for authentication
-            fetch('http://localhost:5000/api/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(jsonData)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Invalid credentials');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Login successful:', data);
-                // Redirect to the home page upon successful login
-                window.location.href = 'http://localhost:8000/home.html'; // Update the URL as needed
-            })
-            .catch(error => {
-                console.error('Login error:', error);
-                // Display error message to the user
-                alert('Login failed. Please check your credentials and try again.');
-            });
-        });
-    </script>
+    </div>                  
 </body>
 </html>
