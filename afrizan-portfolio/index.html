@@ -35,7 +35,7 @@
     </nav>
 
     <!-- Content for home section -->
-    <section id="home">
+    <section id="home" style="background-image: url('path_to_background_image');">
         <div class="container">
             <h2>Welcome to AFRIZAN</h2>
             <p>Discover and Shop Timeless African Handmade Pieces.</p>
@@ -59,18 +59,37 @@
         </div>
     </section>
 
-    <!-- Content for portfolio  section -->
+    <!-- Content for portfolio section -->
     <section id="portfolio">
         <div class="container">
             <h2>Product Categories</h2>
-	    <p>View our collection of meticulously handcrafted Afrocentric pieces.</p>
-            <ul>
-                <li>Bags</li>
-                <li>Clothes</li>
-                <li>Earrings</li>
-                <li>Bracelets</li>
+            <div class="portfolio-categories">
+                <div class="category">
+                    <a href="#">
+                        <img src="path_to_category_image/bags.jpg" alt="Bags">
+                        <h3>Bags</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <img src="path_to_category_image/clothes.jpg" alt="Clothes">
+                        <h3>Clothes</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <img src="path_to_category_image/earrings.jpg" alt="Earrings">
+                        <h3>Earrings</h3>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <img src="path_to_category_image/bracelets.jpg" alt="Bracelets">
+                        <h3>Bracelets</h3>
+                    </a>
+                </div>
                 <!-- Add more categories as needed -->
-            </ul>
+            </div>
         </div>
     </section>
 
@@ -104,18 +123,12 @@
     </section>
 
     <!-- Content for user/artisan profile section -->
-<section id="profile">
-    <div class="container">
-        <h2>User/Artisan Profile</h2>
-        
-        <h3>User Profile</h3>
-        <form id="userProfileForm" action="update_profile.php" method="post">
-            <label for="userId">User ID:</label>
-            <input type="text" id="userId" name="userId" required>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <!-- Add more user profile details here -->
-            <button type="submit">Update Profile</button>
-        </form>
+    <section id="profile">
+        <div class="container">
+            <h2>User/Artisan Profile</h2>
+            
+            <h3>User Profile</h3>
+            <form id="userProfileForm" action="update_profile.php" method="post">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId" required>
+                <label for="username">Username:</

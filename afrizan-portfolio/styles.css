@@ -113,3 +113,42 @@ button {
 button:hover {
     background-color: #666;
 }
+
+/* Home section background */
+#home {
+    background-image: url('path_to_background_image');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color for better contrast */
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+/* Portfolio section styling */
+.portfolio-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category img {
+    width: 100%;
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin: 0;
+}
