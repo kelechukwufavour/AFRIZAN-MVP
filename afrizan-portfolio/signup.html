@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../afrizan-portfolio/styles.css">
-     <style>
+    <style>
         body {
             background-image: url('path_to_background_image.jpg');
             background-size: cover;
@@ -31,6 +31,48 @@
             <input type="password" id="confirmPassword" name="confirmPassword" required>
             <button type="submit">Sign Up</button>
         </form>
+        <p id="errorMessage" style="color: red; display: none;">Error: Details have already been captured.</p>
     </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                confirmPassword: document.getElementById('confirmPassword').value
+            };
+
+            // Send form data to backend API
+            fetch('http://localhost:5000/api/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Sign up failed');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Sign up successful:', data);
+                // Redirect user to the login page upon successful sign-up
+                window.location.href = 'http://localhost:8000/login.html';
+            })
+            .catch(error => {
+                console.error('Sign up error:', error);
+                // Display error message if details have already been captured
+                document.getElementById('errorMessage').style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
