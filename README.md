@@ -1,64 +1,33 @@
-# AFRISAN-MVP
-AFRIZAN: Elevate African Artisan Excellence with Seamless Tech Integration  AFRIZAN is a collaborative project aiming to empower African artisans by providing a centralized e-commerce platform. This platform connects artisans with a global audience, fostering economic opportunities and preserving cultural heritage.
-Team
+### AFRIZAN: Empowering African Artisans through Seamless E-commerce Integration
 
-Kelechukwu Favour
-Role: Creative Designer/Front End
-Reasoning: As the business owner inspiring the project, Kelechukwu Favour brings a unique understanding of the creative aspects, ensuring that the design aligns with the vision of showcasing handmade products effectively.
-Ugochukwu Emmanuel
-Role: Tech Developer (Back End)
-Reasoning: Ugochukwu Emmanuel takes on the role of Tech Lead/Developer, leveraging technical expertise to implement necessary technologies for the project.
-Collaboration Strategy
+#### Introduction
+AFRIZAN is a collaborative project dedicated to empowering African artisans by providing them with a centralized e-commerce platform. This platform connects artisans with a global audience, fostering economic opportunities and preserving cultural heritage. This README.md serves as a comprehensive guide to the project, detailing its inspiration, technical implementation, and future prospects.
 
-Kelechukwu Favour: Creative Designer ensures the project maintains its focus on showcasing local artistry
-Ugochukwu Emmanuel: Tech Developer leads the implementation of the e-commerce platform, incorporating technology for delivery, marketing, and user experience enhancement.
-Technologies
+- **Deployed Site:** [AFRIZAN Website](https://example.com)
+- **Final Project Blog Article:** [Elevate African Artisan Excellence: The AFRIZAN Journey](https://example.com/blog)
+- **Authors:**
+  - Kelechukwu Favour: Creative Designer/Front End - [LinkedIn](https://linkedin.com/kelechukwufavour)
+  - Ugochukwu Emmanuel: Tech Developer (Back End) - [LinkedIn](https://linkedin.com/ugochukwuemmanuel)
 
-Programming Languages and Frameworks:
-Languages: Python, JavaScript
-Web Frameworks: Flask (Backend), React (Frontend)
-Database: MySQL
-Hosting Platform: AWS
-Books/Resources:
-Books: "Flask Web Development" by Miguel Grinberg, "React: Up & Running" by Stoyan Stefanov
-Online Resources: MDN Web Docs, Flask Documentation, React Documentation
-Alternative Technologies
+#### Installation
+To run the AFRIZAN project locally, follow these steps:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. No installation required for the frontend. It's purely HTML, CSS, and JavaScript.
 
-Backend Language: Python (Flask)
-Decision: Python (Flask) chosen for its readability and the team's proficiency.
-Frontend Framework: React
-Decision: React chosen for its popularity, extensive community support, and availability of reusable components.
-Challenge
+#### Usage
+Once the project is set up, you can access the AFRIZAN platform through your web browser. Users can browse through various categories of handmade products, make purchases, and interact with artisan profiles. Artisans can manage their storefronts, update product listings, and track sales.
 
-Problem the Portfolio Intends to Solve:
-Description: Address challenges faced by African artisans in showcasing and selling handmade products, fostering economic opportunities.
-What the Portfolio Project Will Not Solve:
-Explanation: Won't solve broader economic disparities but actively tackles logistics challenges and preserves cultural heritage.
-Who the Portfolio Project Will Help/Users:
-Explanation: Benefits African artisans and buyers interested in unique, handmade products.
-Relevance to Specific Locale:
-Explanation: Relevant to the entire African continent, promoting local artisans on a global scale.
-Additional Problems the Project Will Not Solve
+#### Contributing
+We welcome contributions from the community to enhance the AFRIZAN platform. To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure tests pass.
+4. Submit a pull request detailing the changes made.
 
-Economic Disparities Beyond Sales:
-Explanation: Won't directly address broader economic challenges faced by artisans.
-Supply Chain Challenges:
-Explanation: Won't inherently solve broader supply chain challenges.
-Risks
+#### Acknowledgments
+- Special thanks to Favour Michael, Kolawole Sunday, Nigel, Elvis, and other peers in Cohort 15 for their constant support and encouragement.
 
-Technical Risks:
-Potential Impacts: Technical challenges in scalability, data security, and seamless integration may impact user experience.
-Safeguards/Alternatives: Regular technical assessments, monitoring, and partnerships with reliable hosting services will mitigate issues.
-Non-Technical Risks:
-Potential Impact: External factors such as economic downturns may affect the demand for handmade products.
-Strategies: Diversification of products, marketing strategies, and staying adaptable to market trends will mitigate risks.
-Infrastructure
 
-Branching and Merging:
-Process: Utilizing the GitHub flow for feature branches, pull requests, code reviews, and merging changes into the main branch.
-Deployment Strategy:
-Strategy: Continuous deployment with automatic staging and production environment updates upon successful testing.
-Populating App with Data:
-Process: Initial data via structured onboarding. Ongoing updates managed by artisans through an intuitive dashboard.
-Testing Tools and Automation:
-Tools: Automated testing with pytest for backend and Jest for frontend. Continuous integration ensures tests are executed automatically.
+#### Conclusion
+The AFRIZAN project is more than just a technical endeavor; it's a testament to our commitment to fostering economic empowerment and cultural preservation. We invite you to join us on this journey as we continue to innovate and make a positive impact on African artisan communities.
