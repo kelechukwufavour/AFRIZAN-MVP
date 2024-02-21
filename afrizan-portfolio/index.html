@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../afrizan-portfolio/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>AFRIZAN</title>
 </head>
 <body>
@@ -46,9 +46,16 @@
     <!-- Content for about section -->
     <section id="about">
         <div class="container">
-            <h2>About Us</h2>
-            <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
-            <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
+                    <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
+                </div>
+                <div class="about-image">
+                    <img src="path_to_your_image/about_image.jpg" alt="About Us Image">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -67,12 +74,18 @@
         </div>
     </section>
 
-    <!-- Content for contact section -->
+    <!-- Content for contact/newsletter section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to learn more about our products and services.</p>
-            <!-- Add a contact form or contact information -->
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest products and news by subscribing to our newsletter.</p>
+            <form id="newsletterForm" action="subscribe.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
