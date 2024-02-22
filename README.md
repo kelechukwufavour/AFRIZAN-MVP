@@ -35,9 +35,11 @@ We welcome contributions from the community to enhance the AFRIZAN platform. To 
 #### Acknowledgments
 - Special thanks to Favour Michael, Kolawole Sunday, Nigel, Elvis, and other peers in Cohort 15 for their constant support and encouragement.
 
-Attached is a few screeenshot from the blogpost
+Attached is a screeenshot from the blogpost
 ![image](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/125453849/28dc9729-471c-4e59-8ef8-ec3e60499918)
 
+####Impressed by our work?
+Show us some support and encouragement by giving us a follow and star right away. Thank you loads 😊😎😎
 #### Conclusion
 The AFRIZAN project is more than just a technical endeavor; it's a testament to our commitment to fostering economic empowerment and cultural preservation. We invite you to join us on this journey as we continue to innovate and make a positive impact on African artisan communities.
 
