@@ -1,4 +1,10 @@
 ![image](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/125453849/bc672bc7-4805-4a0f-aaee-2439b55a323c)
+![products](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/34918992/eac064a8-261c-42ad-9e92-477ca504f4ef)
+![home2](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/34918992/06ce62c0-bc11-47bb-a15a-fba0f286919d)
+![newsletter](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/34918992/38ac57fe-78e4-4490-991c-2da43c262b84)
+![about](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/34918992/df993353-9c16-4e4e-9c76-f770c61cd3ac)
+![products](https://github.com/kelechukwufavour/AFRIZAN-MVP/assets/34918992/fe8f911c-ee84-43f9-88b3-fbef29203105)
+
 ### AFRIZAN: Empowering African Artisans through Seamless E-commerce Integration
 
 #### Introduction
