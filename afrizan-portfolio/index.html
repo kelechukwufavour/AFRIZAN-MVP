@@ -1,183 +1,143 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="profile.css">
-    <title>AFRIZAN</title>
-    <style>
-        body {
-            /* Replace 'path_to_background_image.jpg' with the actual path to your background image */
-            background-image: url('./images/home.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <!-- Add your logo image here -->
-        <img src="./images/logo.jpeg" height="40px" width="40px" alt="AFRIZAN Logo" class="logo">
-        <h1>Welcome to AFRIZAN</h1>
-    </header>
-    
-    <nav>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="#">Menu</a>
-                <div class="dropdown-content">
-                    <a href="#profile">Profile</a>
-                    <a href="#help">Help</a>
-                    <a href="#signup">Sign Up</a>
-                    <a href="#products">Products</a>
-                    <a href="#review">Reviews</a>
-                    <a href="#faq">FAQ</a>
-                </div>
-            </li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li> 
-            <li><a href="#portfolio">Product Categories</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
-        </ul>
-    </nav>
-
-    <!-- Content for home section -->
-    <section id="home" style="background-image: url('path_to_background_image.jpg');">
-        <div class="container">
-            <h2>Welcome to AFRIZAN</h2>
-            <p>Discover and Shop Timeless African Handmade Pieces.</p>
-            <button onclick="scrollToSection('about')">Learn More</button>
-        </div>
-    </section>
-
-    <!-- Content for about section -->
-    <section id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
-                    <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
-                </div>
-                <div class="about-image">
-                    <img src="./images/logo.jpeg" height="100px" width="100px" alt="About Us Image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content for portfolio section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Product Categories</h2>
-            <div class="portfolio-categories">
-                <div class="category">
-                    <a href="#">
-                        <img src="./images/bags.jpeg" alt="Bags">
-                        <h3>Bags</h3>
-                    </a>
-                </div>
-                <div class="category">
-                    <a href="#">
-                        <img src="./images/clothes.jpeg" alt="Clothes">
-                        <h3>Clothes</h3>
-                    </a>
-                </div>
-                <div class="category">
-                    <a href="#">
-                        <img src="./images/earrings.jpeg" alt="Earrings">
-                        <h3>Earrings</h3>
-                    </a>
-                </div>
-                <div class="category">
-                    <a href="#">
-                        <img src="./images/bracelets.jpeg" alt="Bracelets">
-                        <h3>Bracelets</h3>
-                    </a>
-                </div>
-                <!-- Add more categories as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Content for contact/newsletter section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Subscribe to Our Newsletter</h2>
-            <p>Stay updated with our latest products and news by subscribing to our newsletter.</p>
-            <form id="newsletterForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Content for login/signup section -->
-    <section id="login">
-        <div class="container">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Content for user/artisan profile section -->
-    <section id="profile" style="background-image: url('./images/about.jpeg');">
-        <div class="container">
-            <h2>User/Artisan Profile</h2>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>AFRIZAN</title>
+        <style>
+             .home{
+                /* Replace 'path_to_background_image.jpg' with the actual path to your background image */
+                background-image: url('./images/home.jpeg');
+                background-size: auto;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="home">
+            <header style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 style="margin: 0;">
+                    <img src="./images/logo2.jpeg" height="100px" width="100px" alt="AFRIZAN Logo" class="logo">
+                </h1>
+                <nav style="flex-grow: 1; text-align: center;">
+                    <ul class="nav-links" style="display: flex; justify-content: center; list-style: none; padding: 0;">
+                        <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                        <li><a href="#about" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="#portfolio" style="text-decoration: none;">Product Categories</a></li>
+                        <li><a href="#contact" style="text-decoration: none;">Contact</a></li>
+                        <li><a href="login.html" style="text-decoration: none;">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
             
-            <h3>User Profile</h3>
-            <form id="userProfileForm">
-                <label for="userId">User ID:</label>
-                <input type="text" id="userId" name="userId" required>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <!-- Add more user profile details here -->
-                <button type="submit">Update Profile</button>
-            </form>
-
-            <h3>Orders</h3>
-            <!-- Placeholder for displaying user's orders -->
-            <div class="orders">
-                <!-- Order items will be displayed here -->
-            </div>
-
-            <h3>Reviews</h3>
-            <!-- Placeholder for displaying user's reviews -->
-            <div class="reviews">
-                <!-- Review items will be displayed here -->
-            </div>
-
-            <h3>Storefront</h3>
-	    <!-- Placeholder for displaying user's storefront --> 
-	    <div class="storefront">
-		    <!-- Storefront items will be displayed here -->
-	</div>
+            
+           
+        
+            <!-- Content for home section -->
+            <section id="home" class="jumbotron">
+                <div class="container">
+                    <h2>Welcome to AFRIZAN</h2>
+                    <p>Discover and Shop Timeless African Handmade Pieces.</p>
+                    <a href="#about"><button onclick="scrollToSection('about')">Learn More</button></a>
+                </div>
+            </section>
         </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 AFRIZAN. All rights reserved.</p>
-        <p>Contact us: info@afrizan.com | 123-456-7890</p>
-        <ul class="social-media">
-            <li><a href="https://www.facebook.com/afrizan"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/afrizan"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/afrizan"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </div>
-    </footer>
-</body>
-</html>
+    
+        <!-- Content for about section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image" style="float: left;">
+                        <img src="./images/about2.jpeg" alt="About Us Image" style="margin-right: 20px;">
+                    </div>
+                    <div class="about-text" style="float: right;">
+                        <h2>About Us</h2>
+                        <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
+                        <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
+                        <a href="login.html"><button type="submit">Login</button><hr/></a>
+                        <span>Don't have an account? Sign up</span>
+                        <a href="signup.html"><button type="submit" class="btn btn-success">Sign Up</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    
+        <!-- Content for portfolio section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Product Categories</h2>
+                <div class="portfolio-categories">
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/bags.jpeg" alt="Bags">
+                            <img src="./images/bag2.jpeg" alt="Bags">
+                            <h3>Bags</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/clothes.jpeg" alt="Clothes">
+                            <img src="./images/clothes2.jpeg" alt="Clothes">
+                            <h3>Clothes</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/earrings.jpeg" alt="Earrings">
+                            <img src="./images/earrings2.jpeg" alt="Earrings">
+                            <h3>Earrings</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/bracelets.jpeg" alt="Bracelets">
+                            <img src="./images/bracelet2.jpeg" alt="Bracelets">
+                            <h3>Bracelets</h3>
+                        </a>
+                    </div>
+                    <!-- Add more categories as needed -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Content for contact/newsletter section -->
+        <section id="contact">
+            <div class="container">
+                <div  style="float: right; margin-right: 20px;">
+                    <img src="./images/newsletter_bg.jpeg" alt="About Us Image">
+                </div>
+                <div>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with our latest products and news by subscribing to our newsletter.</p>
+                    <form id="newsletterForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+      
+        <footer>
+            <div class="container2">
+              <div class="contact-info">
+                <p>&copy; 2024 AFRIZAN. All rights reserved.</p>
+                <p>Contact us: kelechukwufavour.faye@gmail.com, nwaforugochukwu21@gmail.com | +2347031992338, +2348088292631</p>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/afrizan"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/afrizan"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com/afrizan"><i class="fab fa-instagram"></i>Instagram</a>
+              </div>
+            </div>
+          </footer>
+          
+    </body>
+    </html>

@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../afrizan-portfolio/styles.css">
     <style>
         body {
-            /* Replace 'path_to_background_image.jpg' with the actual path to your background image */
+            font-family: Arial, sans-serif;
             background-image: url('./images/sigup.jpeg');
             background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        
-        #signupForm {
-            margin: auto;
-            width: 50%;
+
+        .form-container {
+            width: 320px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        
-        #signupForm input[type="text"],
-        #signupForm input[type="tel"],
-        #signupForm input[type="email"],
-        #signupForm input[type="password"] {
-            width: 100%;
+
+        .form-container label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="tel"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: calc(100% - 40px);
             padding: 10px;
             margin-bottom: 20px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
+            background-color: #f2f2f2;
+            color: #333;
         }
-        
-        #signupForm input[type="submit"] {
+
+        .form-container input[type="submit"] {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
@@ -40,13 +51,15 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-top: 10px;
         }
-        
-        #signupForm input[type="submit"]:hover {
+
+        .form-container input[type="submit"]:hover {
             background-color: #45a049;
         }
-        
-        #errorMessage {
+
+        .form-container p.error-message {
             color: red;
             text-align: center;
         }
@@ -54,29 +67,36 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <form id="signupForm">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" placeholder="Enter your first name" required><br>
-        
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" placeholder="Enter your last name" required><br>
-        
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number" required><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email" required><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password" required><br>
-        
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" id="confirmPassword" placeholder="Confirm your password" required><br>
-        
-        <button type="submit">Sign Up</button>
-    </form>
-    <p id="errorMessage" style="display: none; color: red;">Sign up failed. Please try again.</p>
-
+    <div class="form-container">
+        <h2 style="text-align: center; color: #333;">Sign Up</h2>
+        <form id="signupForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="First Name" required><br>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Last Name" required><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Phone" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" required><br>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="errorMessage" class="error-message" style="display: none;">Sign up failed. Please try again.</p>
+    </div>
     <script src="script.js"></script>
+
+    <script>
+        // Your validation or form submission JavaScript code here...
+        
+    </script>
 </body>
 </html>
