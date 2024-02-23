@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # models/user.py
-#from . import db
+from models import db
 from hashlib import sha256
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -9,9 +10,10 @@ class User(db.Model):
     email = db.Column(db.String(100), nullable=False, unique=True)
     password_hash = db.Column(db.String(128), nullable=False)
     role = db.Column(db.String(20), nullable=False)
+    orders = db.relationship("Order", backref="user", lazy=True)
 
     def __repr__(self):
-        return f'<User {self.username}>'
+        return f"<User {self.username}>"
 
     def set_password(self, password):
         """Sets the user's password with sha256 encryption"""
@@ -24,8 +26,8 @@ class User(db.Model):
     def serialize(self):
         """Serializes User object to a dictionary"""
         return {
-            'id': self.id,
-            'username': self.username,
-            'email': self.email,
-            'role': self.role,
+            "id": self.id,
+            "username": self.username,
+            "email": self.email,
+            "role": self.role,
         }

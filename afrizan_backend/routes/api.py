@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 from flask_restful import Resource
-#from import User, Product, Order, Review, Category, Artisan
+from models.user import User
+from models.product import Product
+from models.orders import Order
+from models.categories import Category
+from models.artisans import Artisan
+from models.reviews import Review
 
 class UserResource(Resource):
     def get(self):
