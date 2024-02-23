@@ -1,0 +1,143 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>AFRIZAN</title>
+        <style>
+             .home{
+                /* Replace 'path_to_background_image.jpg' with the actual path to your background image */
+                background-image: url('./images/home.jpeg');
+                background-size: auto;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="home">
+            <header style="display: flex; align-items: center; justify-content: space-between;">
+                <h1 style="margin: 0;">
+                    <img src="./images/logo2.jpeg" height="100px" width="100px" alt="AFRIZAN Logo" class="logo">
+                </h1>
+                <nav style="flex-grow: 1; text-align: center;">
+                    <ul class="nav-links" style="display: flex; justify-content: center; list-style: none; padding: 0;">
+                        <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                        <li><a href="#about" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="#portfolio" style="text-decoration: none;">Product Categories</a></li>
+                        <li><a href="#contact" style="text-decoration: none;">Contact</a></li>
+                        <li><a href="login.html" style="text-decoration: none;">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+           
+        
+            <!-- Content for home section -->
+            <section id="home" class="jumbotron">
+                <div class="container">
+                    <h2>Welcome to AFRIZAN</h2>
+                    <p>Discover and Shop Timeless African Handmade Pieces.</p>
+                    <a href="#about"><button onclick="scrollToSection('about')">Learn More</button></a>
+                </div>
+            </section>
+        </section>
+    
+        <!-- Content for about section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image" style="float: left;">
+                        <img src="./images/about2.jpeg" alt="About Us Image" style="margin-right: 20px;">
+                    </div>
+                    <div class="about-text" style="float: right;">
+                        <h2>About Us</h2>
+                        <p>At Afrizan, we aim to tackle the challenges faced by African artisans in showcasing and selling their handmade products. Our project provides a centralized e-commerce platform that connects artisans with a global audience, thereby fostering economic opportunities and empowering local craftsmanship.</p>
+                        <p>Who We Help/Users: Our project benefits African artisans and craftsmen looking to expand their market reach. Our users include both sellers (artisans) and buyers interested in unique, handmade products.</p>
+                        <a href="login.html"><button type="submit">Login</button><hr/></a>
+                        <span>Don't have an account? Sign up</span>
+                        <a href="signup.html"><button type="submit" class="btn btn-success">Sign Up</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    
+        <!-- Content for portfolio section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Product Categories</h2>
+                <div class="portfolio-categories">
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/bags.jpeg" alt="Bags">
+                            <img src="./images/bag2.jpeg" alt="Bags">
+                            <h3>Bags</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/clothes.jpeg" alt="Clothes">
+                            <img src="./images/clothes2.jpeg" alt="Clothes">
+                            <h3>Clothes</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/earrings.jpeg" alt="Earrings">
+                            <img src="./images/earrings2.jpeg" alt="Earrings">
+                            <h3>Earrings</h3>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="./images/bracelets.jpeg" alt="Bracelets">
+                            <img src="./images/bracelet2.jpeg" alt="Bracelets">
+                            <h3>Bracelets</h3>
+                        </a>
+                    </div>
+                    <!-- Add more categories as needed -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Content for contact/newsletter section -->
+        <section id="contact">
+            <div class="container">
+                <div  style="float: right; margin-right: 20px;">
+                    <img src="./images/newsletter_bg.jpeg" alt="About Us Image">
+                </div>
+                <div>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with our latest products and news by subscribing to our newsletter.</p>
+                    <form id="newsletterForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+      
+        <footer>
+            <div class="container2">
+              <div class="contact-info">
+                <p>&copy; 2024 AFRIZAN. All rights reserved.</p>
+                <p>Contact us: kelechukwufavour.faye@gmail.com, nwaforugochukwu21@gmail.com | +2347031992338, +2348088292631</p>
+              </div>
+              <div class="social-media">
+                <a href="https://www.facebook.com/afrizan"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/afrizan"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com/afrizan"><i class="fab fa-instagram"></i>Instagram</a>
+              </div>
+            </div>
+          </footer>
+          
+    </body>
+    </html>
