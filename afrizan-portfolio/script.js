@@ -13,7 +13,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     };
 
     // Send form data to backend API
-    fetch('http://localhost:5000/api/signup', {
+    fetch('http://127.0.0.1:5000/api/signup', { // Update URL to match backend endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 });
 
 // Fetch Data
-fetch('http://localhost:5000/api/data')
+fetch('http://127.0.0.1:5000/api/data') // Update URL to match backend endpoint
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to fetch data');
@@ -49,7 +49,7 @@ fetch('http://localhost:5000/api/data')
     .then(data => {
         console.log('Data:', data);
         let customer_id = data.id;
-        let payment_url = 'http://localhost:5000/payment';
+        let payment_url = 'http://127.0.0.1:5000/payment'; // Update URL to match backend endpoint
         let payment_data = {
             customer_id: customer_id,
             amount: 100  // Replace with actual amount
@@ -93,7 +93,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     });
 
     // Send a POST request to the backend for authentication
-    fetch('http://localhost:5000/api/login', {
+    fetch('http://127.0.0.1:5000/api/login', { // Update URL to match backend endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -117,4 +117,3 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Login failed. Please check your credentials and try again.');
     });
 });
-
