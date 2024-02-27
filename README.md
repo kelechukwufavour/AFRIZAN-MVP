@@ -42,4 +42,4 @@ Attached is a screeenshot from the blogpost
 The AFRIZAN project is more than just a technical endeavor; it's a testament to our commitment to fostering economic empowerment and cultural preservation. We invite you to join us on this journey as we continue to innovate and make a positive impact on African artisan communities.
 
 #### Impressed with our project ?
-show us some encouragement by adding a star to our Project. Thank you loads 😎😊
+show us some encouragement by adding a star to our Project. We need your feedbacks. Thank you loads 😎😊

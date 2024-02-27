@@ -7,6 +7,7 @@ order_bp = Blueprint('order', __name__)
 category_bp = Blueprint('category', __name__)
 artisan_bp = Blueprint('artisan', __name__)
 review_bp = Blueprint('review', __name__)
+payment_bp = Blueprint('payment', __name__)
 
 # Define route handlers
 @user_bp.route('/api/users')
@@ -32,3 +33,7 @@ def get_artisans():
 @review_bp.route('/api/reviews')
 def get_reviews():
     return "Get reviews"
+
+@payment_bp.route('/api/payments')
+def get_payments():
+    return "Get payments"
