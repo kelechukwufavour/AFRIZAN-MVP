@@ -40,6 +40,7 @@ header {
     list-style-type: none;
     padding-left: 25px;
     flex-grow: 1;
+    color: #000;
 }
 
 
@@ -277,4 +278,30 @@ footer {
   .social-media a:hover {
     text-decoration: underline;
   }
-  
+  /* Align images in a row */
+.category .image-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Remove margin for last image in a row */
+.category .image-wrapper:last-child {
+    margin-right: 0;
+}
+
+/* Center images horizontally */
+.category .portfolio-categories {
+    display: flex;
+    justify-content: center;
+}
+
+/* Adjust spacing between categories */
+.portfolio-categories {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Add padding around the images */
+.category img {
+    padding: 5px;
+}
